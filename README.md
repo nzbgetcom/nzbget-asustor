@@ -22,6 +22,18 @@ Default shared folder for NZBGet is `Download` (it will be created during instal
 
 Path for NZBGet files is `Download\NZBGet`.
 
+## Testing / Stable version switch
+
+To switch to latest testing version:
+1. From WebUI: `Settings` -> `SYSTEM` -> `Check for Updates` -> `Testing` -> `Install`.
+2. If nzbget does not automatically restarted, restart nzbget package from App Center.
+
+To switch from testing to stable version:
+1. Backup configuration file (`Settings` -> `SYSTEM` -> `Backup`)
+2. Remove nzbget package from App Center
+3. Install nzbget package from App Center
+4. Restore configuration (`Settings` -> `SYSTEM` -> `Restore` -> Select conf saved in p.1 -> Select all sections -> Restore -> Save all changes)
+
 ## Extensions
 
 You can put custom extensions in `ScriptDir` directory.
