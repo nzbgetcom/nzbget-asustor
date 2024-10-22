@@ -2,7 +2,7 @@
   "general":{
 	"package":"nzbgetcom",
 	"name":"NZBGet",
-	"version":"20241021",
+	"version":"20241022",
 	"conflicts":[],
 	"developer":"nzbgetcom",
 	"maintainer":"nzbgetcom",
@@ -40,7 +40,7 @@
 	  "stop-order":30
 	},
 	"prerequisites":{
-	  "enable-service":[""],
+	  "enable-service":[],
 	  "restart-service":[]
 	}
   }

@@ -1,6 +1,8 @@
 # NZBGet package for ASUSTOR NAS
 
-This package during install downloads latest stable version of NZBGet. Then it can be updated via NZBGet automatic update.
+This package installs latest stable version of NZBGet to any ASUSTOR NAS.
+
+Updating supported via NZBGet automatic update.
 
 ## Installation
 

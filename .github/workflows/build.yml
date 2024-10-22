@@ -1,0 +1,28 @@
+name: build
+
+on:
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-22.04
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build ASUSTOR APK
+      run: |
+        sudo apt update && sudo apt install -y python3 fakeroot
+        bash build.sh
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: nzbget-asustor
+        path: build/*.apk
+        retention-days: 10
