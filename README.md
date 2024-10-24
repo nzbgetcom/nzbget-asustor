@@ -2,7 +2,7 @@
 
 This package installs latest stable version of NZBGet to any ASUSTOR NAS.
 
-Updating supported via NZBGet automatic update.
+Updates are supported through NZBGet's automatic update.
 
 ## Installation
 
@@ -32,24 +32,28 @@ To switch to latest testing version:
 
 To switch from testing to stable version:
 1. Backup configuration file (`Settings` -> `SYSTEM` -> `Backup`)
-2. Remove nzbget package from App Center
-3. Install nzbget package from App Center
+2. Remove the nzbget package from App Center
+3. Install the nzbget package from App Center
 4. Restore configuration (`Settings` -> `SYSTEM` -> `Restore` -> Select conf saved in p.1 -> Select all sections -> Restore -> Save all changes)
 
 ## Extensions
 
-You can put custom extensions in `ScriptDir` directory.
+In addition to Extension Manager, if you'd like to use custom extensions, you can put them in the `ScriptDir` directory.
 
 Default `ScriptDir`: `Download\NZBGet\scripts`.
 
 To support python3 extensions, need to install `Python 3` package from `App Central`, no additional configuration is required.
 
-## Switching from [NZBGet](https://www.asustor.com/app_central/app_detail?id=85&type=) package by `Clinton.Hall`
+## Switching from other ASUSTOR packages
+
+If you have been using other packages of nzbget, please consider switching to officially supported (our) `nzbgetcom` version of the package.
+
+Instructions for switching from NZBGet package by [Clinton.Hall](https://www.asustor.com/app_central/app_detail?id=85&type=):
 
 1. Backup configuration file (`Settings` -> `SYSTEM` -> `Backup`)
 2. Save additionally `Setting` -> `PATHS` -> `MainDir`
-3. Remove `nzbget` package
-4. Install `nzbgetcom` package
+3. Remove the `nzbget` package from App Center
+4. Install the `nzbgetcom` package from App Center
 5. Login to WebUI with Username: nzbget / Password: tegbzn6789.
 6. Restore configuration (`Settings` -> `SYSTEM` -> `Restore` -> Select conf saved in p.1 -> *Important* Select all sections except `PATHS` and `UNPACK` -> Restore -> Save all changes)
 7. At this point WebUI auth is changed to old `nzbget` package (Username: nzbget Password: admin)
