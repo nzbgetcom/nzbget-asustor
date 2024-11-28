@@ -2,14 +2,14 @@
   "general":{
 	"package":"nzbgetcom",
 	"name":"NZBGet",
-	"version":"20241022",
+	"version":"1.0",
 	"conflicts":[],
 	"developer":"nzbgetcom",
 	"maintainer":"nzbgetcom",
 	"email":"nzbget@nzbget.com",
 	"website":"https://nzbget.com",
 	"architecture":"any",
-	"firmware":"2.0"
+	"firmware":"4.3.0"
   },
   "adm-desktop":{
 	"app":{
